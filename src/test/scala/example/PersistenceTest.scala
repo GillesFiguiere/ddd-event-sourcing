@@ -1,11 +1,8 @@
 package example
 
-import example.ProjectionProfessionnelleDeSante.{EventHandler, Handlerable}
-import org.scalactic.anyvals.NonEmptyList
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should.Matchers
 
-import scala.collection.mutable
 import scala.collection.mutable.ListBuffer
 
 class PersistenceTest extends AnyFlatSpec with Matchers {
