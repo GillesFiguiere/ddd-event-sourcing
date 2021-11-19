@@ -43,6 +43,7 @@ object ProjectionProfessionnelleDeSante {
 trait Handlerable {
   def handle(reference: Evt, repositoryProfessionelDeSanteNonActive: mutable.Set[IdProfessionelSante])
 }
+type EventHandler = Evt => Unit
 
 }
 
