@@ -24,9 +24,7 @@ class ProjectionProfessionnelleDeSanteTest extends AnyFlatSpec with Matchers {
     ProjectionProfessionnelleDeSante.handle(EvtProfessionelSanteActive(idProfessionelSante),RepositoryProfesionnelDeSanteNonActive)
     RepositoryProfesionnelDeSanteNonActive shouldBe mutable.Set()
   }
-
 }
-
 
 object ProjectionProfessionnelleDeSante {
   def handle(reference: Evt, repositoryProfessionelDeSanteNonActive: mutable.Set[IdProfessionelSante]) = {
