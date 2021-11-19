@@ -13,7 +13,8 @@ class PubSubTest extends AnyFlatSpec with Matchers {
     val eventStore: mutable.ListBuffer[Evt] = scala.collection.mutable.ListBuffer.empty[Evt]
     val idProfessionelSante = IdProfessionelSante(2)
     val eventList = List(EvtProfessionelSanteReference(idProfessionelSante))
-    PubSub.publish(List.empty,eventStore,eventList)
+    val foo = PubSub.publish(_,eventStore,_)
+    foo(List.empty,eventList)
     eventStore shouldBe eventList
   }
 
